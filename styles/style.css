@@ -5,17 +5,9 @@
   font-style: normal;
 }
 
-body section{
-    margin-top: 100px;
-}
-
 /* Shared Styles */
 .fw{
     max-width: 1440px;
-    margin: 0 auto;
-}
-.nav-w{
-    max-width: 1680px;
     margin: 0 auto;
 }
 .text-center{
@@ -77,6 +69,7 @@ body section{
 
 /* Banner Styles */
 .banner{
+    margin-top: 100px;
     justify-content: space-around;
     align-items: center;
 }
@@ -118,6 +111,51 @@ body section{
     align-items: center;
     justify-content: space-around;
 }
+
+/* Popular Collection Styles */
+.popular-collection{
+    max-width: 1048px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.popular-collection h1{
+    margin-bottom: 50px;
+}
+.product-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    justify-items: center;
+}
+.p-card{
+    max-width: 300px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 1);
+}
+.p-card h3{
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.p-card h5{
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+
+
 
 
 
@@ -164,10 +202,14 @@ body section{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
+        padding: 10px;
         justify-content: center;
         align-items: center;
     }
     .brand-img img{
         width: 100%;
+    }
+    .product-cards{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
