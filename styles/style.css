@@ -1,6 +1,173 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 .poppins-font {
   font-family: "Poppins", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   font-style: normal;
+}
+
+body section{
+    margin-top: 100px;
+}
+
+/* Shared Styles */
+.fw{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.nav-w{
+    max-width: 1680px;
+    margin: 0 auto;
+}
+.text-center{
+    text-align: center;
+}
+.display-flex{
+    display: flex;
+}
+.primary-color{
+    color: rgba(58, 58, 58, 1);
+}
+.primary-des{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(58, 58, 58, 1);
+}
+.primary-btn{
+    width: 196px;
+    height: 44px;
+    border: 0;
+    border-radius: 41px;
+    color: #FFFFFF;
+    background-color: #E02C6D;
+    font-weight: 700;
+}
+.hide{
+    display: none;
+}
+/* Header Styles */
+
+/* Navbar Styles */
+.navbar{
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar > div{
+    align-items: center;
+    gap: 34px;
+    color: rgba(58, 58, 58, 1);
+    font-size: 16px;
+    font-weight: 400;
+
+}
+.navbar ul{
+    align-items: center;
+    gap: 34px;
+}
+.navbar ul li{
+    list-style: none;
+}
+.navbar a{
+    text-decoration: none;
+    color: rgba(58, 58, 58, 1);
+}
+.navbar h4{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Banner Styles */
+.banner{
+    justify-content: space-around;
+    align-items: center;
+}
+.banner-img{
+    background-image: url(../assets/images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 10px;
+}
+.banner-content h1{
+    max-width: 582px;
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.banner-content p{
+    max-width: 505px;
+    margin-bottom: 16px;
+}
+
+/* Brand Styles */
+.brand{
+    margin-top: 70px;
+}
+.brand .hr1{
+    margin-bottom: 40px;
+    background: linear-gradient(135.29deg, rgba(192, 204, 218, 0.1),
+    rgba(192, 204, 218, 0.6) 50%,
+    rgba(192, 204, 218, 0.1) 100%);
+}
+.brand .hr2{
+    margin-top: 40px;
+    background: linear-gradient(135.29deg, rgba(192, 204, 218, 0.1),
+    rgba(192, 204, 218, 0.6) 50%,
+    rgba(192, 204, 218, 0.1) 100%);
+}
+.brand-img{
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+/* Small Device Responsive */
+@media screen and (max-width: 576px) {
+    .navbar, .navbar > div, .navbar ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .navbar ul{
+        padding: 0;
+    }
+    .navbar .nav-icon{
+        display: flex;
+        gap: 20px;
+    }
+    .navbar h4{
+        margin-bottom: 0;
+    }
+    .navbar, .banner{
+        text-align: center;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-content h1{
+        font-size: 28px;
+        font-weight: 700;
+        padding: 0;
+    }
+    .banner-img{
+        padding: 100px;
+        background-position: center;
+        background-size: contain;
+        padding: 20px;
+    }
+    .banner-img img{
+        width: 100%;
+    }
+    .brand hr{
+        display: none;
+    }
+    .brand-img{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .brand-img img{
+        width: 100%;
+    }
 }
